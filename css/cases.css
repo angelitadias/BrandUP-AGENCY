@@ -1,0 +1,518 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 1080;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+html {
+    background-color: #03012E;
+}
+
+.poppins-regular {
+    font-weight: 400;
+}
+
+.azul {
+    width: 15rem;
+    height: 5rem;
+    padding-left: 4rem;
+    padding-top: 2rem;
+}
+
+header {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.centro {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-right: 4rem;
+}
+
+.menu-normal,
+.menu-responsivo {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: 12rem;
+}
+
+.menu :hover {
+    color: #00AAFA;
+    text-decoration: none;
+}
+
+.botaoMenu {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-mobile {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    background-color: #03012E;
+    border-radius: 10px;
+    padding: 1rem;
+    transition: transform 0.5s ease;
+    transform: scale(0);
+}
+
+.menu-mobile ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu-mobile ul li {
+    margin-bottom: 1rem;
+}
+
+.accessibility-button {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 1000;
+}
+
+.access-btn {
+    background-color: #00AAFA;
+    border: none;
+    border-radius: 30%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.access-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Menu de acessibilidade */
+.accessibility-menu {
+    display: none;
+    position: absolute;
+    left: 60px;
+    top: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    width: 300px;
+}
+
+.accessibility-menu h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.accessibility-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.accessibility-menu li {
+    margin: 0.5rem 0;
+}
+
+.accessibility-menu button {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+}
+
+.accessibility-menu button:hover {
+    color: #00AAFA;
+}
+
+/* Mostrar menu */
+.accessibility-menu.show {
+    display: block;
+}
+
+.titulo{
+    font-size: 1.9rem;
+    color: aliceblue;
+    text-align: center;
+    margin: 0rem;
+    padding-top: 2rem;
+}
+
+.linha{
+    color: #00AAFA;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 200px;
+    font: 1em sans-serif;
+    text-align: center;
+    margin-top: 0;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 100%;
+    background-color: #ddd;
+}
+
+.grid-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+
+
+.grid-item:hover img {
+    filter: brightness(50%);
+}
+
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.grid-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.overlay p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.overlay button {
+    padding: 0.5rem 1rem;
+    background-color: #00AAFA;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+.overlay button:hover {
+    box-shadow: 0 0 0 4px #00AAFA, 0 0 0 8px #4E08C5;
+}
+
+.contact {
+    width: 100%;
+    padding: 2rem;
+    padding-top: 0%;
+    box-sizing: border-box; 
+}
+
+.titulo {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.titulo-contato {
+    font-size: 6rem;
+    font-weight: 900;
+    color: #00AAFA;
+    position: relative;
+    opacity: 0.1;
+    z-index: -1; 
+    margin: 0;
+}
+
+.subtitulo-contato {
+    font-size: 1.8rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin: 0;
+}
+
+.formularios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 2rem auto;
+    width: 80%;
+    box-sizing: border-box; 
+}
+
+.input, .input1 {
+    height: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0 1rem;
+    font-size: 1rem;
+    width: 80%; 
+}
+
+.input1{
+    padding-left: 1rem;
+}
+
+.input::placeholder, .input1::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.input:focus, .input1:focus {
+    border-color: #00AAFA;
+    outline: none;
+}
+
+.informacoes {
+    margin-top: 2rem;
+    text-align: left;
+    font-size: 0.9rem;
+    color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subtextos{
+    font-size: 10px;
+}
+
+.botao {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.botao-msg {
+    width: 20rem;
+    height: 3rem;
+    background-color: #00AAFA;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-msg:hover {
+    background-color: #008fcc;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .titulo-contato {
+        font-size: 3rem;
+    }
+
+    .subtitulo-contato {
+        font-size: 1.2rem;
+    }
+
+    .formularios {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .botao-msg {
+        width: 100%;
+    }
+}
+
+.footer {
+    background-color: #070435;
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+    color: white;
+}
+
+.grid-footer {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.logo-footer{
+    width: 400px;
+    font-size: 15px;
+}
+
+img.logo-footer{
+    margin-bottom: 0%;
+}
+
+.div-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.div-container img {
+    max-width: 100px;
+    margin-bottom: 1rem;
+}
+.call{
+    width: 24px;
+    height: 24px;
+    padding: 0%;
+    margin: 0%;
+}
+img.call{
+    margin: 0%;
+}
+
+.tell{
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center; 
+    gap: 0.5rem;
+    text-align: center;
+}
+
+h3.tell{
+    padding: 0%;
+}
+
+a.tell{
+    padding: 0%;
+}
+
+.div-container h2{
+    font-size: medium;
+}
+
+.div-container h3{
+    font-size: small;
+    font-weight: 400;
+}
+
+.div-container h2,
+.div-container h3 {
+    margin: 0;
+}
+
+.div-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.div-container a:hover {
+    text-decoration: none;
+}
+
+.div-container ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.menu-footer {
+    display: block;
+    margin: 0.5rem 0;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-footer:hover {
+    color: #007cb6;
+    text-decoration: none;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+button img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .grid-footer {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .div-container {
+        align-items: center;
+    }
+}

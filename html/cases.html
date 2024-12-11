@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/BALMT-AGENCY-04-12-main/cases.css">
+    <link rel="shortcut icon" type="img" href="/BALMT-AGENCY-04-12-main/foguete.roxo.PNG">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Bebas+Neue&display=swap"rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>BrandUp Agency</title>
+</head>
+<body>
+    <!--Cabeçalho da navegação-->
+    <header>
+        <!--Logo da marca e opções de navegação-->
+        <img class="azul" src="/BALMT-AGENCY-04-12-main/brandup.azul.PNG" alt="BrandUp Logo">
+        <nav class="menu">
+            <ul class="centro">
+                <li><a href="oficial.html" class="menu-normal">Home</a></li>
+                <li><a href="quemsomos.html" class="menu-normal">Quem Somos</a></li>
+                <li><a href="/BALMT-AGENCY-04-12-main/servicos.html" class="menu-normal">Serviços</a></li>
+                <li><a href="cases.html" class="menu-normal">Cases</a></li>
+                <li><a href="cases.html#contato" class="menu-normal">Contato</a></li>
+            </ul>
+        </nav>
+        <!--Menu mobile-->
+        <button onclick="mostrarmenu()" class="botaoMenu">
+            <img src="/BALMT-AGENCY-04-12-main/menu_white_36dp.svg" class="imgmenu" alt="Imagem menu">
+        </button> 
+        <nav id="menu-mobile" class="menu-mobile">
+            <ul>
+                <li><a href="oficial.html" class="menu-responsivo">Home</a></li>
+                <li><a href="quemsomos.html" class="menu-responsivo">Quem Somos</a></li>
+                <li><a href="atividades.html" class="menu-responsivo">Serviços</a></li>
+                <li><a href="cases.html" class="menu-normal">Cases</a></li>
+                <li><a href="contato.html" class="menu-responsivo">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="accessibility-button">
+        <button class="access-btn" onclick="toggleAccessibilityMenu()">
+            <img src="/BALMT-AGENCY-04-12-main/accessibility.svg" alt="Acessibilidade">
+        </button>
+        <div id="accessibility-menu" class="accessibility-menu">
+            <h3>Ferramentas de Acessibilidade</h3>
+            <ul>
+                <li><button onclick="aumentarTexto()">🔍 Aumentar o Texto</button></li>
+                <li><button onclick="diminuirTexto()">🔍 Diminuir o Texto</button></li>
+                <li><button onclick="escalaCinza()">📖 Escala de Cinza</button></li>
+                <li><button onclick="altoContraste()">🌗 Alto Contraste</button></li>
+                <li><button onclick="contrasteNegativo()">🔄 Contraste Negativo</button></li>
+                <li><button onclick="luzCorFundo()">💡 Luz de Cor de Fundo</button></li>
+                <li><button onclick="linksSublinhados()">🔗 Links Sublinhados</button></li>
+                <li><button onclick="fonteLegivel()">🅰 Fonte Legível</button></li>
+                <li><button onclick="reiniciar()">🔄 Reiniciar</button></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <h2 class="titulo">Nossos cases</h2>
+        <h3 class="linha">__________</h3>
+    </div>
+    <section class="photo-grid">
+        <div class="grid-item">
+            <img src="/BALMT-AGENCY-04-12-main/logo pet.jpeg" alt="Foto 1">
+            <div class="overlay">
+                <h3>Pet & Cia</h3>
+                <p>PETSHOP</p>
+                <button>Contrate</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="/BALMT-AGENCY-04-12-main/logo pet animais.jpeg" alt="Foto 2">
+            <div class="overlay">
+                <h3>Pet & Cia</h3>
+                <p>PETSHOP</p>
+                <button>Contrate</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="/BALMT-AGENCY-04-12-main/camisa pet.jpeg" alt="Foto 3">
+            <div class="overlay">
+                <h3>Pet & Cia</h3>
+                <p>PETSHOP</p>
+                <button>Contrate</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="/BALMT-AGENCY-04-12-main/logo ma-azul.jpeg" alt="Foto 4">
+            <div class="overlay">
+                <h3>Muro Alto ap307</h3>
+                <p>HOSPEDAGEM</p>
+                <button>Contrate</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="/BALMT-AGENCY-04-12-main/folder ma.jpeg" alt="Foto 5">
+            <div class="overlay">
+                <h3>Muro Alto ap307</h3>
+                <p>HOSPEDAGEM</p>
+                <button>Contrate</button>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="/BALMT-AGENCY-04-12-main/logo ma-verde.jpeg" alt="Foto 6">
+            <div class="overlay">
+                <h3>Muro Alto ap307</h3>
+                <p>HOSPEDAGEM</p>
+                <button>Contrate</button>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="contact">
+        <div class="titulo">
+            <h1 class="titulo-contato">CONTATO</h1>
+            <h2 class="subtitulo-contato">Entre em contato</h2>
+        </div>
+        <section class="formularios">
+            <input type="text" class="input1" placeholder="NOME" id="nome" required>
+            <input type="number" class="input" placeholder="TELEFONE" id="num" required>
+            <input type="text" class="input1" placeholder="FATURAMENTO ANUAL" id="fat" required>
+            <input type="text" class="input" placeholder="EMAIL CORPORATIVO" id="email" required>
+            <input type="text" class="input1" placeholder="EMPRESA" id="emp">
+            <input type="text" class="input" placeholder="MENSAGEM" id="msg">
+        </section>
+        <div class="informacoes">
+            <input type="checkbox"></input>
+            <label class="subtextos" for="input">Ao informar meus dados, eu concordo com a Política de Privacidade.</label>
+            <h3 class="subtextos">Você pode alterar suas preferências a qualquer momento.</h3>
+        </div>
+        <div class="botao">
+        <button onclick="enviarmsg()" class="botao-msg">Enviar mensagem</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <section class="grid-footer">
+            <div class="div-container">
+                <img src="/BALMT-AGENCY-04-12-main/brandup.azul.PNG" alt="Logo da Empresa" class="logo-footer">
+                <h3 class="tell">
+                    <img src="/BALMT-AGENCY-04-12-main/call_icon.svg" alt="Ícone de telefone" class="call">
+                    81 9800 8218
+                </h3>
+                <a class="tell" href="tel:0800999551">0800 999 551</a>
+                <a class="tell" href="mailto:contato@brand.up">contato@brand.up</a>
+            </div>
+            <div class="div-container">
+                <ul>
+                    <li><a href="oficial.html" class="menu-footer">Home</a></li>
+                    <li><a href="quemsomos.html" class="menu-footer">Quem Somos</a></li>
+                    <li><a href="servicos.html" class="menu-footer">Serviços</a></li>
+                    <li><a href="cases.html" class="menu-footer">Cases</a></li>
+                    <li><a href="cases.html#contato" class="menu-footer">Contato</a></li>
+                </ul>
+            </div>
+            <div class="div-container">
+                <h2>Recife | PE</h2>
+                <h3>Senai Areias, 102</h3>
+            </div>
+            <div class="div-container">
+                <h2>Siga-nos nas redes sociais</h2>
+                <button aria-label="Instagram"><img src="/BALMT-AGENCY-04-12-main/insta.png" alt="" class="rsicon"></button>
+                <button aria-label="Facebook"><img src="/BALMT-AGENCY-04-12-main/facebook.png" alt="" class="rsicon"></button>
+                <button aria-label="LinkedIn"><img src="/BALMT-AGENCY-04-12-main/LinkedIn.png" alt="" class="rsicon"></button>
+            </div>
+        </section>
+    </footer>
+    <script src="/BALMT-AGENCY-04-12-main/cases.js"></script>
+</body>
+</html>

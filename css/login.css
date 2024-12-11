@@ -1,0 +1,206 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 1080;
+    height: 130vh;
+    font-family: "Poppins", sans-serif;
+}
+
+
+html {
+    background-color:  #03012E;
+}
+
+.poppins-regular {
+    font-weight: 400;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+}
+
+.azul {
+    width: 15rem;
+    height: 5rem;
+    padding-left: 4rem;
+    padding-top: 2rem;
+}
+
+header {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.centro {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-right: 4rem;
+}
+
+.menu-normal,
+.menu-responsivo {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: 12rem;
+}
+
+
+.botaoMenu {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-mobile {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    background-color: #03012E;
+    border-radius: 10px;
+    padding: 1rem;
+    transition: transform 0.5s ease;
+    transform: scale(0);
+}
+
+.menu-mobile ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu-mobile ul li {
+    margin-bottom: 1rem;
+}
+@media screen and (max-width: 950px) {
+    .menu {
+        display: none;
+    }
+
+    .botaoMenu {
+        display: block;
+    }
+
+    .menu-mobile {
+        display: flex;
+    }
+
+    .fogueteefeito {
+        width: 60%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .azul {
+        width: 10rem;
+        height: 3rem;
+        padding-left: 0;
+        padding-top: 0;
+    }
+}
+table{
+    width: 600px;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 5rem;
+    margin-left: 27rem;
+}
+td{
+    border: 2px solid white;
+}
+.container{
+    width: 100vw;
+    margin-top: 1rem;
+    text-align: center;
+    align-items: center;
+}
+.titulo{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+h1{
+    font-family: 'Poppins';
+    font-size: 40px;
+    color: white;
+}
+.poppins-regular {
+    font-weight: 400;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+}
+.opcoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 40rem;
+    width: 20vw;
+    text-align: center;
+    text-align: center;
+}
+.inputs{
+    width: 30vw;
+    margin-left: 33rem;
+    text-align: center;
+    
+}
+input{
+    width: 20rem;
+    height: 2rem;
+    margin-top: 1rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    border-color: white;
+    background-color: #03012E;
+    
+}
+button{
+    width: 9rem;
+    height: 3rem;
+    font-family: monospace;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+.img{
+    width: 20%
+    
+}
+.imgbrandup{
+    width: 15rem;
+}
+
+footer{
+    text-align: center;
+    color: aliceblue;
+    padding-top: 5rem;
+}

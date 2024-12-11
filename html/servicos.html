@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/BALMT-AGENCY-04-12-main/servicos.css">
+    <link rel="shortcut icon" type="img" href="/BALMT-AGENCY-04-12-main/foguete.roxo.PNG">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Bebas+Neue&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>BrandUp Agency</title>
+</head>
+<body>
+    <!--Cabeçalho da navegação-->
+    <header>
+        <!--Logo da marca e opções de navegação-->
+        <img class="azul" src="/BALMT-AGENCY-04-12-main/brandup.azul.PNG" alt="BrandUp Logo">
+        <nav class="menu">
+            <ul class="centro">
+                <li><a href="oficial.html" class="menu-normal">Home</a></li>
+                <li><a href="quemsomos.html" class="menu-normal">Quem Somos</a></li>
+                <li><a href="/BALMT-AGENCY-04-12-main/servicos.html" class="menu-normal">Serviços</a></li>
+                <li><a href="cases.html" class="menu-normal">Cases</a></li>
+                <li><a href="servicos.html#contato" class="menu-normal">Contato</a></li>
+            </ul>
+        </nav>
+        <!--Menu mobile-->
+        <button onclick="mostrarmenu()" class="botaoMenu">
+            <img src="/imgs/menu_white_36dp.svg" class="imgmenu" alt="Imagem menu">
+        </button>
+        <nav id="menu-mobile" class="menu-mobile">
+            <ul>
+                <li><a href="oficial.html" class="menu-responsivo">Home</a></li>
+                <li><a href="quemsomos.html" class="menu-responsivo">Quem Somos</a></li>
+                <li><a href="servicos.html" class="menu-responsivo">Serviços</a></li>
+                <li><a href="contato.html" class="menu-responsivo">Contato</a></li>
+                <li><a href="login.html" class="menu-responsivo">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="accessibility-button">
+        <button class="access-btn" onclick="toggleAccessibilityMenu()">
+            <img src="/BALMT-AGENCY-04-12-main/accessibility.svg" alt="Acessibilidade">
+        </button>
+        <div id="accessibility-menu" class="accessibility-menu">
+            <h3>Ferramentas de Acessibilidade</h3>
+            <ul>
+                <li><button onclick="aumentarTexto()">🔍 Aumentar o Texto</button></li>
+                <li><button onclick="diminuirTexto()">🔍 Diminuir o Texto</button></li>
+                <li><button onclick="escalaCinza()">📖 Escala de Cinza</button></li>
+                <li><button onclick="altoContraste()">🌗 Alto Contraste</button></li>
+                <li><button onclick="contrasteNegativo()">🔄 Contraste Negativo</button></li>
+                <li><button onclick="luzCorFundo()">💡 Luz de Cor de Fundo</button></li>
+                <li><button onclick="linksSublinhados()">🔗 Links Sublinhados</button></li>
+                <li><button onclick="fonteLegivel()">🅰 Fonte Legível</button></li>
+                <li><button onclick="reiniciar()">🔄 Reiniciar</button></li>
+            </ul>
+        </div>
+    </div>
+    <section class="servicos">
+        <div class="container">
+            <h3 class="titulo">Nossos serviços</h3>
+            <h3 class="linha">__________</h3>
+            <p class="texto">Bem-vindo(a) à <strong>Brandup</strong>. Muito além do Marketing Digital.Com uma equipe sênior e apaixonada pelo que faz, nossa missão é transformar negócios por meio da comunicação. Conte conosco para criar estratégias de marketing eficientes para fortalecer sua marca e conquistar resultados extraordinários.</p>
+        </div>
+        <div class="container">
+            <!--conteiner vazio - produção-->
+        </div>
+        <!-- Repita mais 6 containers, mudando os conteúdos -->
+        <div class="container com-borda">
+            <h3 class="titulo">Social</h3>
+            <p class="texto">Usamos todas as ferramentas das redes sociais para construir relacionamentos sólidos com seu público e aumentar sua visibilidade online. Nossa equipe, especializada em marketing de resultado, desenvolve estratégias de conteúdo envolventes e interativas. Desde a criação de postagens relevantes até a interação com seguidores, estamos prontos para ajudá-lo a expandir sua comunidade, fortalecer sua presença nas mídias e impulsionar o engajamento.</p>
+            <ul class="lista">
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Planejamento</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Conteúdo</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Community Manager</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Influência</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Mensuração</li>
+            </ul>
+        </div>
+        <div class="container com-borda">
+            <h3 class="titulo">Institucional</h3>
+            <p class="texto">Comunique-se de forma eficaz, crie brand awareness e transmita confiança aos seus stakeholders. Nossas estratégias de comunicação institucional são projetadas para fortalecer sua marca e estabelecer uma imagem sólida no mercado. Desde apresentações corporativas a materiais on e offline, criamos conteúdos que conversam com sua audiência e reforçam sua credibilidade. Conquiste a confiança de clientes, parceiros e investidores.</p>
+            <ul class="lista">
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Comunicação Institucional</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Endomarketing</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Comunicação Interna</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Employer Branding</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Assessoria de Imprensa</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Gestão de Branding</li>
+            </ul>
+        </div>
+        <div class="container com-borda">
+            <h3 class="titulo">Tech</h3>
+            <p class="texto">Explore todo o potencial da tecnologia para impulsionar sua presença digital. Nossa equipe especializada desenvolve sites, e-commerce, sistemas e aplicativos que oferecem experiências únicas aos seus clientes. Todos os projetos já saem em versões responsivas para todas as plataformas desktop e mobile.</p>
+            <ul class="lista">
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Sites</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> E-commerce</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Landing Pages</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Sistemas</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Realidade Virtual</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Metaverso</li>
+            </ul>
+        </div>
+        <div class="container com-borda">
+            <h3 class="titulo">Branding</h3>
+            <p class="texto">Destaque-se da concorrência com uma identidade de marca única. Nossos especialistas em branding criarão uma identidade visual única e alinhada com seus valores, transmitindo uma mensagem consistente e atraindo a preferência do seu público-alvo. Desde o design do logotipo até a definição das diretrizes visuais, tom de voz e planejamento estratégico da marca, nossa abordagem estratégica garantirá que sua marca se destaque e se conecte emocionalmente com seus clientes.</p>
+            <ul class="lista">
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Naming</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Design de Marca</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Aplicações</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Universo Verbal e Visual</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Brandbook</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Rebranding</li>
+            </ul>
+        </div>
+        <div class="container com-borda">
+            <h3 class="titulo">Performance</h3>
+            <p class="texto">Maximize o desempenho das suas campanhas com nossas estratégias de marketing inteligentes. Através de análises de dados, otimização de anúncios e monitoramento de métricas, nossa agência de marketing irá garantir que suas campanhas atinjam resultados mensuráveis e um alto retorno positivo sobre o investimento.</p>
+            <ul class="lista">
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Campanhas Patrocinadas</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Inbound Marketing</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> SEO</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Mídia Programática</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Merchandising</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Marketing de Performance</li>
+            </ul>
+        </div>
+        <div class="container com-borda">
+            <h3 class="titulo">Influência</h3>
+            <p class="texto">Potencialize sua presença digital com nossa expertise em influenciadores. Nossa equipe trabalha para tornar sua marca uma referência no mercado com ajuda dos melhores influenciadores. Utilizamos as melhores práticas para ampliar o alcance e a relevância do seu conteúdo, garantindo maior visibilidade e conexão com seu público-alvo. Conte conosco para impulsionar o sucesso e influência da sua marca.</p>
+            <ul class="lista">
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Seleção e mapeamento de influenciadores</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Contratação e agenciamento de influenciadores</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Gestão comercial e operacional</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Gestão de ações e conteúdo</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Consultoria para criação de conteúdo</li>
+                <li><img src="/BALMT-AGENCY-04-12-main/check_small_24dp_00AAFA_FILL0_wght400_GRAD0_opsz24.svg" alt="Check"> Definição de KPIs e objetivos</li>
+            </ul>
+        </div>
+    </section>
+    <section id="contato" class="contact">
+        <div class="titulo-c">
+            <h1 class="titulo-contato">CONTATO</h1>
+            <h2 class="subtitulo-contato">Entre em contato</h2>
+        </div>
+        <section class="formularios">
+            <input type="text" class="input1" placeholder="NOME" id="nome" required>
+            <input type="number" class="input" placeholder="TELEFONE" id="num" required>
+            <input type="text" class="input1" placeholder="FATURAMENTO ANUAL" id="fat" required>
+            <input type="text" class="input" placeholder="EMAIL CORPORATIVO" id="email" required>
+            <input type="text" class="input1" placeholder="EMPRESA" id="emp">
+            <input type="text" class="input" placeholder="MENSAGEM" id="msg">
+        </section>
+        <div class="informacoes">
+            <input type="checkbox"></input>
+            <label class="subtextos" for="input">Ao informar meus dados, eu concordo com a Política de Privacidade.</label>
+            <h3 class="subtextos">Você pode alterar suas preferências a qualquer momento.</h3>
+        </div>
+        <div class="botao">
+        <button onclick="enviarmsg()" class="botao-msg">Enviar mensagem</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <section class="grid-footer">
+            <div class="div-container">
+                <img src="/BALMT-AGENCY-04-12-main/brandup.azul.PNG" alt="Logo da Empresa" class="logo-footer">
+                <h3 class="tell">
+                    <img src="/BALMT-AGENCY-04-12-main/call_icon.svg" alt="Ícone de telefone" class="call">
+                    81 9800 8218
+                </h3>
+                <a class="tell" href="tel:0800999551">0800 999 551</a>
+                <a class="tell" href="mailto:contato@brand.up">contato@brand.up</a>
+            </div>
+            <div class="div-container">
+                <ul>
+                    <li><a href="oficial.html" class="menu-footer">Home</a></li>
+                    <li><a href="quemsomos.html" class="menu-footer">Quem Somos</a></li>
+                    <li><a href="atividades.html" class="menu-footer">Serviços</a></li>
+                    <li><a href="cases.html" class="menu-footer">Cases</a></li>
+                    <li><a href="servicos.html#contato" class="menu-normal">Contato</a></li>
+                </ul>
+            </div>
+            <div class="div-container">
+                <h2>Recife | PE</h2>
+                <h3>Senai Areias, 102</h3>
+            </div>
+            <div class="div-container">
+                <h2>Siga-nos nas redes sociais</h2>
+                <button aria-label="Instagram"><img src="/BALMT-AGENCY-04-12-main/insta.png" alt="" class="rsicon"></button>
+                <button aria-label="Facebook"><img src="/BALMT-AGENCY-04-12-main/facebook.png" alt="" class="rsicon"></button>
+                <button aria-label="LinkedIn"><img src="/BALMT-AGENCY-04-12-main/LinkedIn.png" alt="" class="rsicon"></button>
+            </div>
+        </section>
+    </footer>
+    <script src="/BALMT-AGENCY-04-12-main/servicos.js"></script>
+</body>
+</html>
